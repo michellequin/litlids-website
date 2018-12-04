@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Lit Lids  </title>
+    <link rel="stylesheet" type="text/css" href="LLStyle.css">
+    <meta name = "viewport" content = "width = device-width,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script type="text/javascript" src="scrollingScript.js"></script>
+    <!-- figure out how to script a scroll down animation to the hash -->
+
+</head>
+
+<body>
+    <!-- HTML5 article tag for content -->
+    <!--
+  Problem statement. A concise statement of the problem your project is trying to solve.
+  Conceptual Design
+  Design Process and Artifacts
+  Functional Prototype: Video Clip
+-->
+<nav id="main_nav">
+   <ul>
+      <li><a href="#prototype"> Prototype </a></li>
+      <li><a href="#process"> Process </a></li>
+      <li><a href="#concept"> Concept </a></li>
+      <li><a href="#motivation"> Motivation </a></li>
+   </ul>
+</nav>
+
+<!--
+Project name. Team members. A list of your team members.
+-->
+<div id = "topBlock" class = "block">
+  <!-- eventually will have prototype here -->
+  <h1> Lit Lids </h1>
+  <h2>  Smart Lid and Bracelet for Prevention of Drink Tampering </h2>
+  <p id = "byLine"> by Barakah Quader, Maxine Hood, and Michelle Quin </p>
+</div>
+
+<div id = "motivation" class = "block">
+  <header>
+     <a name = "planning"> <h2> Motivation </h2></a>
+  </header>
+
+
+  <h3> Problem Statement </h3>
+  <p> Drink tampering done with the intention of perpetrating sexual assault is unfortunately a prevalent problem in society today, and especially affects college-age women and other vulnerable communities. There is no widespread solution for people who go out to bars, parties, or other social outings to detect whether or not their drink has been spiked or otherwise tampered with. While this is a significant safety issue, it has yet to be addressed in a convenient or affordable manner. We propose a tangible interface called Lit Lids that consists of a reusable smart lid and paired bracelet with light and vibrotactile feedback that alerts users to any interference with their drink. </p>
+
+  <h3> Why Lit Lids? </h3>
+  <p>A tangible approach to the problem of drink spiking is beneficial because it is a better way to prevent the crime from happening, instead of just detecting it. It is also has a low intrusive element as the user should not have to do anything different than what they would do with a regular drink, besides wearing a bracelet and closing and opening a lid. This design is the easiest for a person to use to detect and prevent contamination in comparison to using testing strips or a regular lid that cannot tell you if it’s been taken off.
+  </p>
+
+
+</div>
+
+<div id = "concept" class = "block">
+  <header>
+     <h2> Concept </h2></a>
+  </header>
+  <h3> Inspiration </h3>
+  <p> The attached location-detecting bracelet is inspired by related works on smart bracelets, such as Angelini et al.'s monitoring bracelet designed for the elderly that defines the aesthetics and functionalities of bracelets to account for physical or cognitive impairments. This is relevant to our work because we must take into consideration accessible design in creating a wearable targeted for use by those who may be incapacitated or otherwise impaired by alcohol intake. </p>
+  <p>
+  We also looked into Ye, Li, and Shen's Soter, smart bracelets designed for children’s safety, which uses similar GPS functionality as our bracelet incorporates, and a smart notification system that we hope to implement in the future. </p>
+  <h3> Design Principles </h3>
+  <p> We design the lid to initially fit most common cup diameter of a solo cup (9.32 cm). The user wears a bracelet that the lid can detect the distance to. If the lid is opened very close to the bracelet, for example while holding the cup in that hand, the lid opens normally. If the lid is opened and the bracelet is not in the required distance the lid and bracelet will flash a red light and give vibrotactile feedback that can only be turned off by contact with the bracelet. </p>
+  <p>
+  This serves the purpose of notifying the owner of the drink and people around that someone else has taken off the user’s cup lid, regardless of what type of interference occurred. This accounts for all forms of tampering and allows the user to decide their next step. It is also meant to deter assailants away from the drink and the user, realizing that the flashing feedback may alert others to their identity or intentions. </p>
+  <h3> Conceptual Design </h3>
+  <p> The concept of the extension of the body through objects from Danielle Wilde, Thecla Schiphorst, and Sietske Klooster's Move to Design / Design to Move: A conversation About Designing for the Body strongly impacted the design of the Lit Lid user interface. The Lid Lid is designed to be an effortless extension to the user's awareness of their drink at a party. The user will not have to consciously keep track of who is by their drink because the Lit Lid will alert them when someone attempts to tamper with it. The bracelet is the most impacted by this paper as it's purpose to measure the distance between itself and the lid to determine who is opening the lid, should be unnoticed by the user. The bracelet should only be noticed when it is alerting the user of possible contamination. Furthermore, the Lit Lid system is embedded into the users drinking habit because as long as the user wears the bracelet, they are able to interact with the lid without interference. </p>
+ <p> Thus the only change in their routine is the physical act of placing the lid, removing the lid, and attaching the lid to the bottom of the cup. </p>
+ <p> Based off of Albrecht Schmidt, Uni Karlsruhe, Kristof Van Laerhoven, and Starlab Research's How to Build Smart Appliances, our pressure and distance sensors in the Lit Lid are designed to maximize unobtrusiveness of the Lid Lid's lid and bracelet. Thus the user's interaction with the wearable and the lid is meant to be an unobtrusive way to incorporate better drink protection and spiking prevention into their drinking routine. </p>
+
+   <h3> Initial Storyboard </h3>
+
+  <div id = "images">
+    <img src ="storyboard1.jpg" class = "vis" alt= "storyboard page 1" style= "width:100%">
+    <img src ="storyboard2.jpg" class = "vis" alt= "storyboard page 2" style= "width:100%">
+  </div>
+
+ </div>
+
+ <div id = "process" class = "block">
+  <header>
+     <h2> Process </h2></a>
+  </header>
+
+
+ <h3>Preliminary interface designs </h3>
+ <p><strong> Design 1 </strong></p>
+ <img src =d1_a.jpg alt = "the first few screens for the first design" style = "width:85%">
+ <img src =d1_b.jpg alt = "the next few screens for the first design" style = "width:85%">
+
+ <p></p> <!--space -->
+
+ <p><strong> Design 2 </strong></p>
+ <img src =d2_a.jpg alt = "the first few screens for the second design" style = "width:85%">
+ <img src =d2_b.jpg alt = "the next few screens for the second design" style = "width:85%">
+
+ <h3> Storyboards </h3>
+ <p><strong> Design 1 Storyboard </strong></p>
+ <img src =d1_storyboard.jpg alt = "storyboard of our first design" style = "width:85%">
+ <p><strong> Design 2 Storyboard </strong></p>
+ <img src =d2_storyboard.jpg alt = "storyboard of our second design" style = "width:85%">
+
+
+
+
+</div>
+
+<div id = "prototype" class = "block">
+  <header>
+     <a> <h2> Prototype </h2></a>
+  </header>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kz8LKS3hHQ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
