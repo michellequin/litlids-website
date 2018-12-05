@@ -51,6 +51,8 @@ Project name. Team members. A list of your team members.
   <p>A tangible approach to the problem of drink spiking is beneficial because it is a better way to prevent the crime from happening, instead of just detecting it. It is also has a low intrusive element as the user should not have to do anything different than what they would do with a regular drink, besides wearing a bracelet and closing and opening a lid. This design is the easiest for a person to use to detect and prevent contamination in comparison to using testing strips or a regular lid that cannot tell you if it’s been taken off.
   </p>
 
+  <img src =Bracelet_User.JPG class = "vis" alt = "user wearing smart bracelet" style = "width:45%">
+
 
 </div>
 
@@ -86,23 +88,39 @@ Project name. Team members. A list of your team members.
   </header>
 
 
- <h3>Preliminary interface designs </h3>
- <p><strong> Design 1 </strong></p>
- <img src =d1_a.jpg alt = "the first few screens for the first design" style = "width:85%">
- <img src =d1_b.jpg alt = "the next few screens for the first design" style = "width:85%">
+ <h3> Design Implementation </h3>
+ <p> The Lit Lid is a plastic circular lid with a ring of red LED lights along the top border of the lid. The LEDs light up red to indicate to the user that the lid was open by someone other than the user and is thus possible contamination. </p>
+ <p> The lid uses pressure and motion sensors that line up with the underside rim of the lid, to determine when the lid is taken off and on. The underside of the lid has a silicone adhesive that enables the lid to snap to the bottom of the glass, for placement when the user is drinking from their cup.
+  </p>
+  <p> Additionally, the lid connects via Bluetooth to a bracelet the user wears. The bracelet contains a plastic square piece that holds LEDs, vibration, and discrete button. The Bluetooth from the lid sets off the LEDs and vibration in the bracelet to communicate to the user immediately when the lid is opened by someone other than them. The user can turn off their bracelet indicators by pressing on the plastic piece. To determine who is opening the lid, the lid contains GPS tracking to the bracelet to find the distance between them. When the lid is farther than 20 centimeters away from the bracelet, the lid set off its LEDs and sends an alert to the bracelet which sets off it's LEDs and vibration. </p>
+  <p> Furthermore, a user wearing the bracelet can take off the lid without setting of the alarm because the bracelet is close enough. To turn off the LEDs on the cup, the user takes off the lid with the bracelet at maximum 20 centimeters away from it. We believe this design is ideal because it is minimally invasive to the normal drinking habit of the user. When used correctly, meaning the user opens the lid only when wearing the bracelet, the only upset to their normal habit is the act of placing and removing the lid on the cup. Besides this, the user is only impacted in their routine when the lid and bracelet notifies them of possible contamination by someone else removing their lid. </p>
+  <p> The use of LEDs and vibration in the notification system enables auditory and tactile notification to the user. The alerts on both the lid and bracelet gives multiple notification paths to the user. Additionally, it also communicates to others that there might be something wrong, increasing the awareness and leading to a greater chance of preventing drink spiking. </p>
 
- <p></p> <!--space -->
+   <h3> Design Sketches </h3>
+ <img src =Lid_Side_On_Off.png alt = "the lid from the side, on and off and in relation to a solo cup" style = "width:45%">
+ <img src =lid_top_bottom.png alt = "the lid from the top and botttom" style = "width:45%">
+  <img src =Bracelet.png alt = "the front of the bracelet" style = "width:45%">
+ <img src =Bracelet_Back.png alt = "the back of the bracelet" style = "width:45%">
 
- <p><strong> Design 2 </strong></p>
- <img src =d2_a.jpg alt = "the first few screens for the second design" style = "width:85%">
- <img src =d2_b.jpg alt = "the next few screens for the second design" style = "width:85%">
+  <h3> Technical Diagram </h3>
+ <img src =technical_diagram.png alt = "technical diagram of arduino use" style = "width:100%">
 
- <h3> Storyboards </h3>
- <p><strong> Design 1 Storyboard </strong></p>
- <img src =d1_storyboard.jpg alt = "storyboard of our first design" style = "width:85%">
- <p><strong> Design 2 Storyboard </strong></p>
- <img src =d2_storyboard.jpg alt = "storyboard of our second design" style = "width:85%">
+ <h3> Proof of Concept </h3>
+ <p> The wearable is a soft, flexible, and fashionable band designed to augment to any wrist size. The wearable has a small button interface with lights embedded on the top that flashes when the user's lid has been removed when the user has stepped away from their drink. The bracelet and the lid both use batteries to stay powered up. The user can replace the batteries in the bracelet by unclipping the bracelet to open it up and reveal a small section that keeps the batteries. </p>
 
+ <p> The bracelet has an embedded Bluetooth Arduino that connects with a small Bluetooth Arduino that is connected to the user’s designated lid. The Bluetooth Arduino has GPS tracking that allows it to know when the user has stepped a certain range away from their cup. The bracelet has a small vibration device that can be turned off when the user clicks the button interface at the top of their bracelet. </p>
+
+ <p> The Lit Lids lid is a 3-D printed cup lid embedded with lights along the top and the rim. The lights will flash red when removed when the user is far away from the lid. The lid (10.53 cm diameter) is created to fit a standard Solo Cup (9.53 cm diameter). When the user is within a certain distance of their cup, the lid will automatically turn off its safety setting and will allow the user to remove the lid without any additional feedback. Essentially the user will only receive feedback from their device when someone is potentially
+tampering with it, otherwise the user can comfortably move away from their drink.
+</p>
+
+
+ <h3> Prototype </h3>
+ <img src =Top_View.JPG alt = "top view of lid prototype" style = "width:45%">
+ <p></p>
+   <img src =Lid_Front.JPG class = "vis" alt = "side view of lid prototype" style = "width:45%">
+   <p></p>
+ <img src =Bracelet.JPG alt = "front view of smart bracelet" style = "width:45%">
 
 
 
